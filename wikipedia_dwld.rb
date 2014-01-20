@@ -7,6 +7,8 @@ remote_full_url = remote_base_url + remote_page_name
 
 puts "Downloading from: " + remote_full_url
 
+(1..5).each {|i| print ".", sleep(1)} 
+
 # Declare variable to store html
 remote_data = open(remote_full_url).read
 
